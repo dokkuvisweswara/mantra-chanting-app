@@ -6,6 +6,8 @@ import { usePathname, useRouter } from "next/navigation";
 import { fetchDeckingConfig } from "@/lib/decking";
 import { slugify } from "@/lib/slugify";
 import type { DeckingScreen } from "@/types/decking";
+import Image from "next/image";
+import yogaPose from "../../public/yoga-pose.png";
 
 // default links shown while config is loading
 const defaultLinks = [
@@ -211,7 +213,18 @@ export default function Nav() {
   return (
     <header className="w-full bg-white dark:bg-gray-900 shadow-sm">
       <nav className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="text-xl font-bold">Mantra Life</div>
+        <div className="flex items-start">
+        <div className="text-xl font-bold relative w-8 h-8 mr-2">
+        <Image
+          src={yogaPose}
+          alt="Content Poster"
+          fill
+        />
+        </div>
+        <div className="text-3xl font-bold text-gray-800 dark:text-gray-200">
+           Mantra Life
+        </div>
+        </div>
         <ul className="flex space-x-6">
           {links.map((link) => (
             <li key={link.href}>
