@@ -9,8 +9,8 @@ import type { DeckingScreen } from "@/types/decking";
 
 // default links shown while config is loading
 const defaultLinks = [
-  { href: "/home", label: "Home" },
-  { href: "/watchlist", label: "Watchlist" },
+  // { href: "/home", label: "Home" },
+  // { href: "/watchlist", label: "Watchlist" },
   { href: "/mantra", label: "Mantra" },
   { href: "/songs", label: "Songs" },
   { href: "/login", label: "Login" },
@@ -51,9 +51,9 @@ export default function Nav() {
   // Set up locale-aware default links on mount
   useEffect(() => {
     const localizedDefaults = [
-      { href: `/${currentLocale}/`, label: "Home" },
-      { href: `/${currentLocale}/watchlist`, label: "Watchlist" },
-      { href: `/${currentLocale}/movie`, label: "Movie" },
+      // { href: `/${currentLocale}/`, label: "Home" },
+      // { href: `/${currentLocale}/watchlist`, label: "Watchlist" },
+      // { href: `/${currentLocale}/movie`, label: "Movie" },
       { href: `/${currentLocale}/mantra`, label: "Mantra" },
       { href: `/${currentLocale}/songs`, label: "Songs" },
       { href: `/${currentLocale}/login`, label: "Login" },
@@ -211,7 +211,7 @@ export default function Nav() {
   return (
     <header className="w-full bg-white dark:bg-gray-900 shadow-sm">
       <nav className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div className="text-xl font-bold">Vlive</div>
+        <div className="text-xl font-bold">Mantra Life</div>
         <ul className="flex space-x-6">
           {links.map((link) => (
             <li key={link.href}>
