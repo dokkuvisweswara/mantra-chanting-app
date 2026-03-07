@@ -247,7 +247,7 @@ duḥkhakşaya karō bhava`,
         {/* Info Section */}
         <div className="mt-8 pt-8 border-t border-gray-300 dark:border-gray-700">
           <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
-            🙏 ఈ మంత్రం రోజూ 108 సార్లు రకించండి
+            🙏 ఈ మంత్రం రోజూ 108 సార్లు జపించండి
           </p>
           <p className="text-center text-gray-500 dark:text-gray-500 text-xs mt-2">
             Recite this mantra 108 times daily for spiritual benefits
