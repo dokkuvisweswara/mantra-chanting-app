@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 export default function MantraPage() {
   const [count, setCount] = useState(0);
@@ -108,7 +109,7 @@ duḥkhakşaya karō bhava`,
             {mantra}
           </p>
           {/* playback + mute controls */}
-          <div className="absolute top-2 right-2 flex space-x-1">
+          {/* <div className="absolute top-2 right-2 flex space-x-1">
             <button
               onClick={() => {
                 if (typeof window === "undefined" || !window.speechSynthesis) {
@@ -137,6 +138,12 @@ duḥkhakşaya karō bhava`,
               title={isSpeaking ? "Pause" : "Play"}
             >
               {isSpeaking ? "⏸️" : "▶️"}
+              <Image
+                src="play-button.png"
+                alt="Content Poster"
+                fill
+                className="object-cover"
+              />
             </button>
 
             <button
@@ -169,7 +176,7 @@ duḥkhakşaya karō bhava`,
             >
               {isMuted ? "🔇" : "🔊"}
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Counter Display with circular progress ring */}
